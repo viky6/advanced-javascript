@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <h1>Java script light on off</h1>
+        <p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+        <script>
+            function light(sw)
+            {
+                if(sw == 0)
+                {
+                    pic = "C:\Users\ADMIN\Downloads\lightoff.jpg"
+                }
+                else{
+                    pic = "C:\Users\ADMIN\Downloads\lighton.jpg"
+
+                }
+                document.getElementById("myimage").src = pic;
+            }
+        </script>
+
+            <img id = "myimage" src =  "C:\Users\ADMIN\Downloads\lightoff.jpg" alt = "image" width = "100" height = "150">
+
+            <p>
+                <button type = "button" onclick = "light(1)">ON</button>
+                <button type = "button" onclick = "light(0)">Off</button>
+            </p>
+    </body>
+</html>
